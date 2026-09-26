@@ -8,7 +8,7 @@ from myapp.forms import StudentForm
 
 # Create your views here.
 
-def create_form(request):
+def create_student(request):
     if request.method == 'POST':
         form=StudentForm(request.POST)
         if form.is_valid():
