@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home Page</title>
+</head>
+<body>
+
+<h1>This is Home page!</h1><br>
+<a href="{% url 'about' %}">About</a><br>
+{% for i in student %}
+    {{i.name}}<br>
+    {{i.s_id}}<br>
+    {{i.dob}}<br>
+    {{i.email}}<br>
+    {{i.departmet}}<br>
+    <hr>
+{% endfor %}
+
+</body>
+</html>

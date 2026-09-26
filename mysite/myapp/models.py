@@ -8,5 +8,5 @@ class Student(models.Model):
     email=models.EmailField(max_length=50,unique=True)
     department=models.CharField(max_length=50,blank=False)
 
-def __str__(self):
-    return self.s_id
+    def __str__(self):
+         return self.s_id
